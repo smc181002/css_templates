@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Poppins&display=swap');
+
+*{
+        color: #eeeeee;
+        font-family: 'Montserrat', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
+        font-weight: 500;
+        margin: 0;
+        outline: 0;
+        text-decoration: none;
+}
+
+body{
+        background: #292929;
+}
+
+/*---------------------
+basic style
+-------*/
+
+.neuo, .material{
+        background: #1b1b1b;
+        border-radius:8px;
+        -webkit-border-radius:8px;
+        -moz-border-radius:8px;
+        -ms-border-radius:8px;
+        -o-border-radius:8px;
+        
+}
+
+.neuo{
+        box-shadow: 6px 6px 20px #0c0c0c, -6px -6px 20px #2a2a2a;
+}
+
+.base{
+        position: absolute;
+        padding: 18px 36px;
+        font-size: 16pt;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        margin-top: 20px;
+        width: 84%;
+        height: 80%;
+        overflow-y: scroll;
+        overflow-wrap: break-word;
+}
+
+
+/*----------------
+scrool bar
+-------*/
+
+::-webkit-scrollbar {
+        width: 6px;
+}    
+ 
+ ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+       
+::-webkit-scrollbar-thumb {
+        background: rgb(100, 100, 100);
+        border-radius: 10px;
+
+}
+      
+::-webkit-scrollbar-thumb:hover {
+        background: #474747; 
+
+}
+/*--------------------------
+backside css
+--------*/
+
+.back{
+        width: 120%;
+        position: fixed;
+        height: 130px;
+        top: 45%;
+        left: -10%;
+        transform: rotate(17deg);
+        background: orange;
+        -webkit-transform: rotate(17deg);
+        -moz-transform: rotate(17deg);
+        -ms-transform: rotate(17deg);
+        -o-transform: rotate(17deg);
+}
+
+.logotype{
+        color: rgba(214, 214, 214, 0.048);
+        font-size: 6.2rem;
+        position: fixed;
+        z-index: 1212;
+        font-weight: 900;
+        top: 103%;
+        left: 32px;
+        letter-spacing: 7px;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        text-transform: uppercase;
+}
+
+/*-------------------------
+navbar
+-----*/
+
+.nav-item {
+        list-style: none;
+        display: inline-flex;
+        padding-left: 20px;
+        padding-bottom: 10px;
+}
+
+ul li.nav-item a{
+        margin-top: 0;
+        font-size: 18px;
+        font-weight: 700;
+        display:block;
+        position:relative;
+        padding: 2px 4px;
+        text-decoration: none;
+}
+
+.nav-list{
+        line-height: 52.4px;
+        float: right;
+        margin-right: 6%;
+        padding-left: 0;
+}
+
+.navbar{
+        width: 100%;
+        position: fixed;
+        margin-top: 8px;
+        z-index: 1221;
+        padding-bottom: 12px;
+}
+
+nav label{
+        font-size: larger;
+        padding-left: 6%;
+        /* padding-top: 8px; */
+        /* position: relative; */
+        /* top: 8px; */
+        line-height: 52.4px;
+}
+
+li.nav-item.oth:first-child{
+        padding-left: 0;
+}
+
+/*-------------------
+searchbox
+-------*/
+.srch-m{
+        line-height: 52.4px;
+}
+.srch{
+        /* display: none; */
+        margin-left: 2%;
+        line-height: 12.4px;
+        min-width: 256px;
+        min-height: 15px;
+        border: none;
+
+}
+
+/*--------------------
+the uderline one
+---------*/
+
+.oth a:after{
+        content: '';
+        text-align: center;
+        background: rgb(133, 133, 133);
+        width: 0px;
+        bottom: 0;
+        transition: 0.5s;
+        height: 2px;
+        position: relative;
+        top: 10px;
+        display: block;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+}
+
+.oth a:hover::after, .oth a:focus::after{
+        width: 100%;
+}
+
+
+/*--------------------------
+login signup
+---------*/
+
+.a, .b{
+        border: none;
+        font-weight: 500;
+        font-size: medium;
+        border-radius: 5px;
+        padding: 8px 16px ;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        cursor: pointer;
+        display: inline-block;
+
+}
+
+.a, .b:hover{
+        background: #0c0c0c;
+        box-shadow:0 0 12px black;
+}
+
+.b{
+        background: #292929;
+        box-shadow:0 0 12px #0c0c0c;
+
+        /* transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s; */
+        cursor: pointer;
+}
